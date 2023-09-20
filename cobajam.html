@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Situs Anda</title>
+    <!-- Masukkan tautan ke file CSS Anda di sini -->
+    <style>
+        /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+/* Product Styling */
+/* .produk {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produk .product {
+    flex: 1;
+    max-width: calc(33.33% - 20px);
+    margin: 10px; 
+} */
+.produk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom per baris */
+    gap: 10px; /* Jarak antara produk */
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 40%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+/* Cart Styling */
+.cart {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart table th, .cart table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.cart table th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Checkout Styling */
+.checkout {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.checkout label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.checkout input[type="text"],
+.checkout input[type="email"],
+.checkout input[type="file"],
+.checkout textarea,
+.checkout select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkout button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.checkout button:hover {
+    background-color: #555;
+}
+
+.coba{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.checkout input[type="radio"],
+.checkout input[type="checkbox"]{
+    margin-right: 5px;
+    margin-left: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header situs web Anda -->
+        <h1>Selamat Datang di Toko Jam</h1>
+        <nav>
+            <!-- Menu navigasi Anda -->
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Produk Terbaru</h2>
+        <section class="produk">
+            <!-- Contoh produk pertama -->
+            <div class="product">
+                <img src="1.jpg" alt="Produk 1">
+                <h3>Nama Produk 1</h3>
+                <p>Rp 1.000.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <!-- Contoh produk kedua -->
+            <div class="product">
+                <img src="2.jpg" alt="Produk 2">
+                <h3>Nama Produk 2</h3>
+                <p>Rp 2.000.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <!-- Contoh produk ketiga -->
+            <div class="product">
+                <img src="3.jpg" alt="Produk 3">
+                <h3>Nama Produk 3</h3>
+                <p>Rp 3.000.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <!-- Contoh produk keempat -->
+            <div class="product">
+                <img src="4.jpg" alt="Produk 4">
+                <h3>Nama Produk 4</h3>
+                <p>Rp 1.500.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <!-- Contoh produk kelima -->
+            <div class="product">
+                <img src="5.jpg" alt="Produk 5">
+                <h3>Nama Produk 5</h3>
+                <p>Rp 1.750.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <!-- Contoh produk keenam -->
+            <div class="product">
+                <img src="6.jpg" alt="Produk 6">
+                <h3>Nama Produk 6</h3>
+                <p>Rp 2.500.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </section>
+
+        <section class="tentang">
+            <h2>Tentang Kami</h2>
+            <p>Toko Jam adalah website yang dirangcang oleh developer untuk memudahkan user dalam mencari dan membeli segala macam Jam Tangan</p>
+            <br>
+            <div style="margin-left: 460px;">
+                <p>Video Youtube</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rY7LSJHPRiQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Keranjang Belanja</h2>
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Nama Produk</th>
+                        <th>Harga</th>
+                        <th>Jumlah</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>Produk 1</td>
+                        <td>$10.00</td>
+                        <td>2</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Produk 2</td>
+                        <td>$15.00</td>
+                        <td>1</td>
+                        <td>$15.00</td>
+                    </tr> -->
+                    <!-- Anda dapat menambahkan lebih banyak item keranjang di sini -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="checkout">
+            <h2>Checkout</h2>
+            <form id="myForm">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+        
+                <label for="email">Alamat Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="jenis">Jenis Kelamin:</label>
+                <div class="coba">
+                    <input type="radio" id="jenis" name="jenis" required>
+                    <p>Laki - Laki</p>
+                    <input type="radio" id="jenis" name="jenis" required>
+                    <p>Perempuan</p>
+                </div>
+
+                <label for="alamat">Alamat Pengiriman:</label>
+                <!-- <input type="text" id="alamat" name="alamat" required> -->
+                <textarea id="alamat" name="alamat" rows="4" cols="50" required placeholder="Tulis Alamat Anda di sini"></textarea>
+        
+                <label for="foto">Upload Foto:</label>
+                <input type="file" id="foto" name="foto" accept=".jpg, .jpeg, .png">
+
+                <label for="kota">Kota:</label>
+                <input type="text" id="kota" name="kota" required>
+        
+                <label for="kodepos">Kode Pos:</label>
+                <input type="text" id="kodepos" name="kodepos" required>
+        
+                <label for="metode-pembayaran">Metode Pembayaran:</label>
+                <select id="metode-pembayaran" name="metode-pembayaran">
+                    <option value="bank">Transfer Bank</option>
+                    <option value="kartu-kredit">Kartu Kredit</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+        
+                <div class="coba">
+                    <!-- <label for="setuju">Saya Setuju:</label> -->
+                    <input type="checkbox" id="setuju" name="setuju" required>
+                    <p>Saya Setuju</p>
+                </div>
+
+                <button type="submit">Pesan Sekarang</button>
+                <button type="reset" id="resetButton">Reset</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <!-- Footer situs web Anda -->
+        <p style="text-align: center;">Hak Cipta © 2023 Nama Situs Anda</p>
+    </footer>
+
+    <!-- JavaScript untuk menambahkan produk ke keranjang belanja -->
+    <script>
+        // Menangkap elemen tombol reset
+        var resetButton = document.getElementById("resetButton");
+
+        // Menambahkan event listener ke tombol reset
+        resetButton.addEventListener("click", function() {
+            // Mereset inputan dengan mengosongkan nilai-nilai mereka
+            document.getElementById("nama").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("alamat").value = "";
+            document.getElementById("foto").value = "";
+            document.getElementById("jenis").checked = false;
+            document.getElementById("metode-pembayaran").selectedIndex = 0;
+            document.getElementById("setuju").checked = false;
+        });
+
+        // Menangkap elemen form
+        var myForm = document.getElementById("myForm");
+
+        // Menambahkan event listener ke form untuk menangani pengiriman
+        myForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Mencegah pengiriman formulir bawaan
+
+            // Gantilah URL dengan URL YouTube yang ingin Anda buka
+            window.location.href = "https://www.jamtangan.com";
+        });
+
+        // Fungsi untuk menambahkan produk ke keranjang
+        function tambahkanKeKeranjang(namaProduk, hargaProduk) {
+            var table = document.getElementById("cartTable").getElementsByTagName('tbody')[0];
+            var row = table.insertRow();
+            
+            var cellNama = row.insertCell(0);
+            var cellHarga = row.insertCell(1);
+            var cellJumlah = row.insertCell(2);
+            var cellTotal = row.insertCell(3);
+            
+            cellNama.innerHTML = namaProduk;
+            cellHarga.innerHTML = formatRupiah(hargaProduk);
+            cellJumlah.innerHTML = '1';
+            cellTotal.innerHTML = formatRupiah(hargaProduk);
+        }
+
+        // Membuat daftar semua tombol "Beli Sekarang"
+        var buttons = document.querySelectorAll(".product button");
+
+        // Menambahkan event listener ke setiap tombol
+        buttons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                var produk = this.parentNode;
+                var namaProduk = produk.querySelector("h3").textContent;
+                var hargaProdukText = produk.querySelector("p").textContent;
+                var hargaProduk = parseFloat(hargaProdukText.match(/\d+\.\d+/)[0]);
+                
+                tambahkanKeKeranjang(namaProduk, hargaProdukText);
+            });
+        });
+
+        function formatRupiah(angka) {
+    var reverse = angka.toString().split('').reverse().join(''),
+        ribuan = reverse.match(/\d{1,3}/g);
+    ribuan = ribuan.join('.').split('').reverse().join('');
+    return 'Rp ' + ribuan;
+}
+
+        window.alert("Selamat Datang di Toko Jam !");
+    </script>
+</body>
+</html>
